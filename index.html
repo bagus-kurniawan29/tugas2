@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2 - Bagus Kurniawan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@900&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Public Sans', sans-serif;
+            background-color: #F9BC61;
+        }
+        .font-pixel {
+            font-family: 'VT323', monospace;
+            font-weight: 600;
+        }
+        .text-shadow {
+            text-shadow: 4px 4px 0px rgba(0,0,0,1);
+        }
+        .bg-custom-fixed {
+            background-attachment: fixed;
+        }
+        @media (max-width: 768px) {
+            .bg-custom-fixed {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="relative min-h-screen flex flex-col items-center justify-center bg-[url('background.jpg')] bg-custom-fixed bg-cover bg-center border-black px-4">
+        <h1 class="font-pixel text-center text-6xl md:text-9xl text-white relative z-10 drop-shadow-[5px_4px_0px_rgba(0,0,0,1)] uppercase leading-none">
+            TUGAS 2 <br>PERANCANGAN WEB
+        </h1>
+
+        <div class="relative z-10 text-center">
+            <p class="text-white text-2xl md:text-6xl text-shadow uppercase tracking-tight">
+                Bagus Kurniawan
+            </p>
+            <p class="text-white text-xl md:text-4xl text-shadow opacity-90 mt-1">
+               INFORMATIKA 4D | 240602085
+            </p>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+    </div>
+   <div class="min-h-screen bg-[#F9BC61] p-6 md:p-16">
+    <h2 class="text-2xl md:text-4xl uppercase border-4 border-black inline-block p-4 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] font-bold mb-10">
+        5 Tag HTML biasa digunakan 
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#3333FF]">
+            <h3 class="text-3xl font-pixel bg-[#3333FF] text-white inline-block px-3 py-1 mb-4 border-2 border-black">
+                &lt;div&gt;
+            </h3>
+            <p class="text-xl leading-tight mb-4">
+                Wadah umum untuk mengelompokkan elemen. Dipakai untuk membuat struktur layout (seperti kotak-kotak ini).
+            </p>
+            <div class="bg-gray-100 p-3 font-mono text-sm border-2 border-black">
+                &lt;div class="container"&gt;...&lt;/div&gt;
+            </div>
+            <div class="bg-blue-600 justify-center flex mt-4 p-3 w-16 mx-auto">
+                <p class="text-white text-center">Contoh &lt;div&gt;</p>
+            </div>
+        </div>
+
+        <div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#FF6B22]">
+            <h3 class="text-3xl font-pixel bg-[#FF6B22] text-white inline-block px-3 py-1 mb-4 border-2 border-black">
+                &lt;a&gt;
+            </h3>
+            <p class="text-xl leading-tight mb-4">
+                Digunakan untuk membuat link. Dipakai untuk navigasi antar halaman atau mengarah ke website lain.
+            </p>
+            <div class="bg-gray-100 p-3 font-mono text-sm border-2 border-black">
+                &lt;a href="https://link.com"&gt;Klik&lt;/a&gt;
+            </div>
+            <div class="justify-center flex mt-4 p-3 mx-auto">
+                <a href="https://bagus-kurniawan-portofolio.vercel.app/"  class="underline text-2xl font-pixel text-blue-600">Klik Disini</a>
+            </div>
+        </div>
+
+        <div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#FFF431]">
+            <h3 class="text-3xl font-pixel bg-[#FFF431] text-black inline-block px-3 py-1 mb-4 border-2 border-black">
+                &lt;img&gt;
+            </h3>
+            <p class="text-xl leading-tight mb-4">
+                Digunakan untuk menampilkan gambar. Dipakai untuk poster, foto profil, atau aset visual lainnya.
+            </p>
+            <div class="bg-gray-100 p-3 font-mono text-sm border-2 border-black">
+                &lt;img src="foto.jpg" alt="Deskripsi"&gt;
+            </div>
+            <div class="justify-center flex mt-4 p-3 mx-auto">
+                <img src="UNiversitas fakultas teknik.png" alt="logo" class="h-16">
+            </div>
+        </div>
+
+        <div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#000000]">
+            <h3 class="text-3xl font-pixel bg-black text-white inline-block px-3 py-1 mb-4 border-2 border-black">
+                &lt;h1&gt;
+            </h3>
+            <p class="text-xl leading-tight mb-4">
+                Tag judul (Heading). Dipakai untuk memberi tahu browser bagian mana yang merupakan judul utama teks.
+            </p>
+            <div class="bg-gray-100 p-3 font-mono text-sm border-2 border-black">
+                &lt;h1&gt;Judul Laporan&lt;/h1&gt;
+            </div>
+            <div class="justify-center flex mt-4 p-3 mx-auto">
+                <h1 class="text-center font-pixel text-4xl">Judul Laporan</h1>
+            </div>
+        </div>
+
+    </div>
+    <div class="justify-center flex mt-8 md:p-16 md:mt-2">
+        <div class="bg-white border-4 border-black p-6 shadow-[8px_8px_0px_0px_#2FFF2F]">
+            <h3 class="text-3xl font-pixel bg-[#2FFF2F] text-white inline-block px-3 py-1 mb-4 border-2 border-black">
+                &lt;p&gt;
+            </h3>
+            <p class="text-xl leading-tight mb-4">
+                Tag paragraf. Dipakai untuk menuliskan teks narasi atau penjelasan panjang dalam sebuah dokumen.
+            </p>
+            <div class="bg-gray-100 p-3 font-mono text-sm border-2 border-black">
+                &lt;p&gt;Ini adalah isi paragraf.&lt;/p&gt;
+            </div>
+            <div class="justify-center flex mt-4 p-3 mx-auto">
+                <p>isi paragraf Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum qui sed alias perspiciatis sit dolorum sequi aperiam voluptate pariatur quaerat minus, minima tenetur blanditiis laborum. Expedita fugit distinctio vitae voluptatum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-[#F59E0B] min-h-screen md:p-16 p-8">
+    <h2 class="text-2xl md:text-4xl uppercase border-4 border-black inline-block p-4 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] font-bold mb-10">
+        Kendala Yang dialami
+    </h2>
+
+    <div class="bg-white p-8 border-4 border-black shadow-[10px_10px_0px_0px_#FD90E7] hover:shadow-none transition-all">     
+    <p class="text-xl md:text-2xl leading-snug text-black">
+        Selama proses pembelajaran <span class="bg-[#3333FF] text-white px-2">Frontend Development</span>, 
+        kendala utama yang dihadapi terletak pada pemahaman mendalam mengenai 
+        <span class="underline decoration-4 decoration-[#FD90E7]">Layouting dan Positioning</span>. 
+    </p>
+    <div class="mt-6 space-y-4">
+        <div class="flex items-start gap-3">
+            <span class="bg-black text-white px-2 font-pixel">#1</span>
+            <p class="text-lg">
+                Kesulitan mengatur tata letak elemen <code class="font-mono bg-gray-200 px-1 border-2 border-black">&lt;div&gt;</code> menggunakan properti CSS konvensional yang sering kali tidak presisi.
+            </p>
+        </div>
+
+        <div class="flex items-start gap-3">
+            <span class="bg-[#FF6B22] text-white px-2 font-pixel">#2</span>
+            <p class="text-lg">
+                Tantangan dalam memosisikan <span class="font-bold border-b-4 border-[#3333FF]">Gambar Responsif</span> agar tetap proporsional di berbagai ukuran layar.
+            </p>
+        </div>
+
+        <div class="flex items-start gap-3">
+            <span class="bg-[#FFF431] text-black px-2 font-pixel">#3</span>
+            <p class="text-lg">
+                Teknik perataan elemen ke tengah <span class="italic font-bold">(Centering Strategy)</span> baik secara vertikal maupun horizontal yang memerlukan logika <code class="px-2 font-mono text-sm border-2 border-black">Box Model & Flexbox</code>
+            </p>
+        </div>
+    </div>
+</div>
+    <h2 class="text-2xl md:text-4xl uppercase border-4 border-black mt-10 inline-block p-4 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] font-bold mb-10">
+        Bagian yang paling mudah/sulit
+    </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+    <div class="bg-white border-4 border-black p-8 shadow-[10px_10px_0px_0px_#3333FF]">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="bg-[#3333FF] text-white p-2 border-2 border-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+            </div>
+            <h3 class="font-pixel text-3xl uppercase">Sisi_Mudah: Visual</h3>
+        </div>
+        
+        <p class="text-xl leading-relaxed">
+            Berbekal pengalaman sebagai <span class="bg-[#3333FF] text-white px-2 italic">Graphic Designer</span>, proses menentukan komposisi warna, pemilihan tipografi, dan pembuatan aset visual terasa jauh lebih intuitif. 
+        </p>
+        <p class="mt-4 text-gray-700 italic border-l-4 border-[#3333FF] pl-4">
+            "Mata desainer membantu saya mempercepat proses prototyping di Figma sebelum masuk ke tahap coding."
+        </p>
+    </div>
+
+    <div class="bg-white border-4 border-black p-8 shadow-[10px_10px_0px_0px_#FF6B22]">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="bg-[#FF6B22] text-white p-2 border-2 border-black">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+            </div>
+            <h3 class="font-pixel text-3xl uppercase">Sisi_Sulit: Logic</h3>
+        </div>
+        
+        <p class="text-xl leading-relaxed">
+            Tantangan terbesar muncul saat harus merealisasikan <span class="bg-[#FF6B22] text-white px-2">Dashboard Kompleks</span>. Mengatur posisi elemen yang saling bergantung satu sama lain sering kali menjadi kendala teknis yang nyata.
+        </p>
+        
+        <div class="mt-6 bg-gray-100 p-4 border-2 border-black font-mono text-sm">
+            <span class="text-red-600">// Keluhan Utama:</span><br>
+            - Grid System bertumpuk<br>
+            - Responsive Dashboard Layout<br>
+            - position absolute dan relative
+        </div>
+    </div>
+</div>
+</div>
+<div class="bg-[#7CF9FF] min-h-screen p-16">
+    <h2 class="text-2xl md:text-4xl uppercase border-4 border-black mt-10 inline-block p-4 bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] font-bold mb-10">
+        Hal yang baru di pelajari
+    </h2>
+    <div class="mt-12 bg-white border-4 border-black p-8 shadow-[12px_12px_0px_0px_#FFF431]">
+    <div class="flex items-center gap-4 mb-6">
+        <div class="bg-[#FFF431] p-3 border-4 border-black shadow-[4px_4px_0px_0px_#000]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="space-y-6 text-2xl leading-snug">
+        <p>
+            Saya telah mempelajari pengembangan web secara mandiri sejak sebelum menempuh bangku perkuliahan dan memiliki pengalaman <span class="bg-[#FF6B22] text-white px-2">Magang dalam pembuatan web</span>, saya percaya bahwa proses belajar tidak pernah mencapai kata final.
+        </p>
+
+        <p class="border-l-8 border-[#3333FF] pl-6 py-2 italic bg-gray-50">
+            "Fokus utama saya saat ini bukan lagi pada dasar-dasar sintaksis, melainkan pada pengembangan <span class="font-bold underline decoration-[#3333FF]">Visual Identity</span> dan tren desain web terbaru."
+        </p>
+        <p class="text-xl">
+            Latar belakang saya sebagai lulusan <span class="font-bold border-b-4 border-[#FF6B22]">Madrasah Aliyah (MA)</span> tidak menjadi penghalang, melainkan motivasi tambahan untuk terus mengasah <span class="bg-blue-600 px-3 text-white">Skill</span> teknis agar tetap relevan dengan standar industri saat ini.
+        </p>
+    </div>
+</div>
+</div>
+</body>
+<footer class=" border-t-8 border-black bg-white p-8 md:p-12">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+
+        <div class="text-center md:text-left">
+            <h4 class="font-pixel text-4xl uppercase mb-2">TUGAS_2.HTML</h4>
+            <p class="text-xl max-w-sm">
+                Web ini dibuat secara menggunakan <span class="bg-[#3333FF] text-white px-1">Tailwind CSS</span> guna Mempenuhi Tugas 2 perancangan web UNiversitas Hamzanwadi.
+            </p>
+        </div>
+        <div class="flex gap-6">
+            <a href="https://github.com/baguskurniawan" target="_blank" 
+               class="group relative flex items-center justify-center w-24 h-24 bg-[#FF6B22] border-4 border-black rounded-full shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+               title="Lihat Source Code di GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                <span class="absolute -top-10 scale-0 group-hover:scale-100 transition-all bg-black text-white text-xs px-2 py-1 font-pixel">GITHUB</span>
+            </a>
+
+            <a href="#" target="_blank" 
+               class="group relative flex items-center justify-center w-24 h-24 bg-[#3333FF] border-4 border-black rounded-full shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
+               title="Lihat Portofolio">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+                    <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="absolute -top-10 scale-0 group-hover:scale-100 transition-all bg-black text-white text-xs px-2 py-1 font-pixel">PORTFOLIO</span>
+            </a>
+        </div>
+    </div>
+    </div>
+</footer>
+</html>
